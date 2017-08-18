@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html;">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <title>场次</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" href="css/cityandcinema/cityandcinema.css" />
+	    <link rel="stylesheet" type="text/css" href="css/fast/fast.css">
+	    <script src="js/jquery-1.8.3.min.js"></script>
+	    <script src="js/common/template-native.js"></script>
+	    <script src="js/common/dateformat.js"></script>
+	    <script src="js/fn.js"></script>
+	    <script type="text/javascript">
+	    	//查询影片排期列表数据
+	    	var path="";
+	    	//查询影片排期列表数据
+			var queryShowData={
+					"filmId":"",
+					"cinemaId":304,
+					"cinemaName":"北京CBD",
+					"showDate":getDateYYYYMMDD(new Date()),
+					"start":0,
+					"num":500,
+					"index":0,
+					"showDateBox":"todayFilmShowBox" 
+			};
+			//查询影院列表配置数据
+			var showCinemaOpts = {
+					'hideEle':['showWraper'],
+					'callback':'fastView.getFilmShowByCinema',
+					'cityId':'8022251040',
+					'cityName':'北京',
+					'locCityId':'8022251040',
+					'locCityName':'北京'
+			};
+			
+			var filmId="20170504104302912547",
+				scopeCinemaId="304",
+				scopeCinemaName="北京CBD",
+				scopeCityId="8022251040",
+				scopeCityName="北京";
+		</script>
+	</head>
+	<body>
+		<input type="hidden" id="basePath" value="/" />
+		<section id="showWraper">
+	    	<section id="filmShowHeader">
+				<div class="header_nav_box">
+					<div class="header_nav">
+						<div class="back"><a href="javascript:window.history.back(-1);"><span class="back_img icon24 i400"></span></a></div>
+						<span class="title fzl">战狼2</span>
+					</div>
+				</div>
+	    	</section>
+	    	<scetion>
+	    		<div class="cinemaName">
+		    		<ul class="cinema_list">
+						<li onclick="fastView.showCinemaListBySl();" class="cinema_item" id="heaCinemaName">
+							<div class="cinema_icon fl"><img src="images/film-icon.png"/></div>
+							<p class="cinema_name fzl">北京丰台万达广场店</p>
+							<p class="cinema_address fzs">北京市丰台区丰科路6号万达广场六层万达影城（地铁9号线丰台科技园站C口</p>
+							<img src="/seat/images/cinema_link.png" class="oper_arrow">
+						</li>
+					</ul>
+		    	</div>
+	    	</scetion>
+	    	<section>
+	    		<div style="height:44px;width:100%;">
+			    	<div class="tbar" style="height:26px;width:100%;">
+			    		<div>
+							<div id="showDateBtnBox" class="btngroup"></div>
+						</div>
+					</div>
+				</div>
+	    	</section>
+			
+			<!--<section id="filmShowBox">
+				<section id="todayFilmShowBox" class="show_list_box" data-index="0">
+				</section>
+				<section id="tomorrowFilmShowBox" class="show_list_box" data-index="1">
+				</section>
+			</section>-->
+			<section id="filmShowBox">
+				<section id="todayFilmShowBox" class="show_list_box" data-index="0">
+					<div class="film_show">
+						<ul class="show_info_list accordion_content" style="display: block;">
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030833230','20170309024811606909','1','199','1502870700')" data-showid="20170814182030833230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item"> 
+											<span class="lcdd fzxl b">16:05</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+										   		<span class="fzs">9号厅</span>
+										   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥50</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">17:55</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余199/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										<span class="fzs">原价：</span><span class="del fzs">80</span>						    
+									</div>
+								</div>					
+							</li>					
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030833230','20170309024811606909','1','199','1502870700')" data-showid="20170814182030833230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item">
+											<span class="lcdd fzxl b">16:05</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+										   		<span class="fzs">9号厅</span>
+										   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥50</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">17:55</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余199/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										       <span class="fzs">原价：</span><span class="del fzs">80</span>
+									</div>
+								</div>					
+							</li>	
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030983230','20170309024811606909','1','210','1502894700')" data-showid="20170814182030983230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item"> 
+											<span class="lcdd fzxl b">22:45</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+											   		<span class="fzs">9号厅</span>
+											   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥60</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">00:35</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余210/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										<span class="fzs">原价：</span><span class="del fzs">80</span>
+								</div>					
+							</li>						
+						</ul>
+					</div>
+				</section>
+				<section id="tomorrowFilmShowBox" class="show_list_box" data-index="1">
+					tomorrow
+					<div class="film_show">
+						<ul class="show_info_list accordion_content" style="display: block;">
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030833230','20170309024811606909','1','199','1502870700')" data-showid="20170814182030833230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item"> 
+											<span class="lcdd fzxl b">10:05</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+										   		<span class="fzs">9号厅</span>
+										   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥50</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">17:55</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余199/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										<span class="fzs">原价：</span><span class="del fzs">80</span>						    
+									</div>
+								</div>					
+							</li>					
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030833230','20170309024811606909','1','199','1502870700')" data-showid="20170814182030833230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item">
+											<span class="lcdd fzxl b">16:05</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+										   		<span class="fzs">9号厅</span>
+										   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥50</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">17:55</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余199/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										       <span class="fzs">原价：</span><span class="del fzs">80</span>
+									</div>
+								</div>					
+							</li>	
+							<li class="show_info_box " onclick="fastView.chooseShow('20170814182030983230','20170309024811606909','1','210','1502894700')" data-showid="20170814182030983230" data-hallid="8"> 
+								<div class="show_info">
+									<div class="show_time info_item"> 
+											<span class="lcdd fzxl b">22:45</span>
+											<span class="show_lang fzs">国</span>
+									</div>
+									<div class="show_hall info_item">
+											   		<span class="fzs">9号厅</span>
+											   		<span class="fzs">数字2D</span>
+									</div> 
+									<div class="show_price info_item" align="right">
+										<span class="online_price fzxl b">￥60</span>
+									</div>		
+								</div>
+			   					<div class="show_info">
+									<div class="end_time info_item">
+										<span class="fzs">00:35</span><span class="ml4 fzs">结束</span>
+									</div>
+									<div class="left_ticket info_item">
+										<span class="fzs">余210/212</span>
+									</div>
+									<div class="other_price info_item" align="right">
+										<span class="fzs">原价：</span><span class="del fzs">80</span>
+								</div>					
+							</li>						
+						</ul>
+					</div>
+				</section>
+			</section>
+	    </section>
+	    
+		<script id="filmShowHeaderTem" type="text/html">
+			<div class="header_nav_box">
+				<div class="header_nav">
+					<div class="back"><a href="javascript:window.history.back(-1);"><span class="back_img icon24 i400"></span></a></div>
+					<div id="showDateBtnBox" class="btngroup">
+						<a data-date="<#=querytoday#>" id="test" data-index="0" class="btn prl2 fzs current">今日<#=localtoday#></a><a data-date="<#=querytomorrow#>" data-index="1" class="btn prl2 fzs last ">明日<#=localtomorrow#></a>
+					</div>
+					<div class="oper fzs" onclick="fastView.showCinemaListBySl()"><span class="oper_img icon24 i200"></span><span id="heaCinemaName" class="fzs"><#=cinemaName#></span></div>
+				</div>
+			</div>
+		</script>
+	    <script src="js/common/history.js"></script>
+	    <script src="js/cityandcinema/cityandcinema.js"></script>
+	    <script src="js/filmshow/show2.js"></script>
+	</body>
+</html>

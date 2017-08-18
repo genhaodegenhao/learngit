@@ -1,0 +1,287 @@
+{
+	"msg": "",
+	"status": 0,
+	"data": [
+		{
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 89,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502774400,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "3号厅 ",
+					"capacity": 100,
+					"cinemaid": "304",
+					"hid": "3",
+					"name": "3号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102404,
+				"serviceprice": 0,
+				"sid": "20170814092019514230",
+				"starttime": 1502767800,
+				"hallvoicetype": "",
+				"hallId": "3"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 77,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502782200,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "3号厅 ",
+					"capacity": 100,
+					"cinemaid": "304",
+					"hid": "3",
+					"name": "3号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102410,
+				"serviceprice": 0,
+				"sid": "20170814092019588230",
+				"starttime": 1502775600,
+				"hallvoicetype": "",
+				"hallId": "3"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 93,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502793300,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "5号厅 ",
+					"capacity": 97,
+					"cinemaid": "304",
+					"hid": "5",
+					"name": "5号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102422,
+				"serviceprice": 0,
+				"sid": "20170814092019927230",
+				"starttime": 1502786700,
+				"hallvoicetype": "",
+				"hallId": "5"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 98,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502797200,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "3号厅 ",
+					"capacity": 100,
+					"cinemaid": "304",
+					"hid": "3",
+					"name": "3号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102426,
+				"serviceprice": 0,
+				"sid": "20170814092019937230",
+				"starttime": 1502790600,
+				"hallvoicetype": "",
+				"hallId": "3"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 90,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502801100,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "5号厅 ",
+					"capacity": 97,
+					"cinemaid": "304",
+					"hid": "5",
+					"name": "5号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102433,
+				"serviceprice": 0,
+				"sid": "20170814092020041230",
+				"starttime": 1502794500,
+				"hallvoicetype": "",
+				"hallId": "5"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 88,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502805000,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "3号厅 ",
+					"capacity": 100,
+					"cinemaid": "304",
+					"hid": "3",
+					"name": "3号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102438,
+				"serviceprice": 0,
+				"sid": "20170814092020050230",
+				"starttime": 1502798400,
+				"hallvoicetype": "",
+				"hallId": "3"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 93,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502808900,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "5号厅 ",
+					"capacity": 97,
+					"cinemaid": "304",
+					"hid": "5",
+					"name": "5号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102441,
+				"serviceprice": 0,
+				"sid": "20170814092020171230",
+				"starttime": 1502802300,
+				"hallvoicetype": "",
+				"hallId": "5"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 98,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502812800,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "3号厅 ",
+					"capacity": 100,
+					"cinemaid": "304",
+					"hid": "3",
+					"name": "3号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102442,
+				"serviceprice": 0,
+				"sid": "20170814092020187230",
+				"starttime": 1502806200,
+				"hallvoicetype": "",
+				"hallId": "3"
+			}
+		}, {
+			"show": {
+				"availablechannel": 1,
+				"availableseatcnt": 95,
+				"carrier": "数字",
+				"dimen": "数字2D",
+				"discountprice": 0,
+				"duration": 110,
+				"endtime": 1502816700,
+				"fid": "20170309024811606909",
+				"filmname": "心理罪",
+				"hall": {
+					"appshortname": "5号厅 ",
+					"capacity": 97,
+					"cinemaid": "304",
+					"hid": "5",
+					"name": "5号厅 ",
+					"type": 0
+				},
+				"language": "国语",
+				"memberprice": 0,
+				"message": null,
+				"onlineprice": 4000,
+				"price": 4000,
+				"seqno": 102451,
+				"serviceprice": 0,
+				"sid": "20170814092020331230",
+				"starttime": 1502810100,
+				"hallvoicetype": "",
+				"hallId": "5"
+			}
+		}
+	],
+	"expireTime": 0
+}

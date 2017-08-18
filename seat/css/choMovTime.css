@@ -1,0 +1,282 @@
+@font-face{
+			font-family: "LED";
+			src:url(../fonts/DS-DIGIB.TTF);
+}
+html{
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+}
+body{
+	background: #f2f2f2;
+	overflow-x: hidden; 
+}
+.time,.film-show-type{
+	font-family: LED;
+}
+.transition{
+	transition:0.5s all ease-out;
+	-webkit-transition:0.5s all ease-out;
+}
+.choMovTime-wrapper .film-local{
+	width: 100%;
+	border-bottom: 1px solid #d9d9d9;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	position: relative;
+}
+.choMovTime-wrapper .film-local p.film-name{
+	line-height: 0.25rem;
+	font-size: 0.16rem;
+	color: #181818;
+	text-indent: 0.55rem;
+}
+.choMovTime-wrapper .film-local p.film-location{
+	width: 90%;
+	line-height: 0.15rem;
+	font-size: 0.12rem;
+	color: #959595;
+	text-indent: 0.55rem;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow-x:hidden;
+}
+p.icon-right{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-top: 1px solid #b6b6b6;
+	border-right: 1px solid #b6b6b6;
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	transform:translate3d(0,-50%,0) rotate(45deg);
+	-webkit-transform:translate3d(0,-50%,0) rotate(45deg);
+}
+.choMovTime-wrapper .film-info{
+	padding-bottom: 0.08rem;
+}
+.choMovTime-wrapper .film-info #film-list-wrapper{
+	height: 0.91rem;
+	position: relative;
+	min-width: 100%; 
+}
+.choMovTime-wrapper .film-info ul{
+	padding: .06rem 0 0;
+	white-space:nowrap;
+	height: 0.79rem;
+	position: absolute;
+	overflow-y: hidden;
+}
+.choMovTime-wrapper .film-info ul li{
+	float: left;
+	background: #f2f2f2;
+	border: 0.02rem solid #f2f2f2;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	margin-left: 0.07rem;
+	margin-bottom: 0.05rem;
+	position: relative;
+}
+.choMovTime-wrapper .film-info ul li.filmChosen{
+	background: #21b4e0;
+	border: 0.02rem solid #21b4e0;
+}
+.choMovTime-wrapper .film-info ul li img{
+	width: 0.52rem;
+	height: 0.7rem;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+}
+.choMovTime-wrapper .film-info ul li span{
+	display: block;
+	font-size: 0.08rem;
+	color: #fff;
+	position: absolute;
+	right: 0.02rem;
+	bottom: 0.02rem;
+	background: #21b4e0;
+	line-height: 100%;
+	padding:0.01rem 0.02rem;
+	border-radius: 2px;
+	-webkit-border-radius:2px;
+}
+.choMovTime-wrapper .film-info .film-date{
+	height: 0.468rem;
+	white-space:nowrap;
+	position: relative;
+	overflow-y: hidden;
+	margin: 0.156rem 0;
+}
+.choMovTime-wrapper .film-info .film-date .film-date-wrapper{
+	position: absolute;
+	min-width: 100%;
+}
+.film-date-wrapper span{
+	color: #181818;
+	font-size: 0.15rem;
+	width: 1rem;
+	text-align: center;
+	line-height: 0.428rem;
+	display: inline-block;
+	border-bottom: 0.02rem solid #f2f2f2;
+	float: left;
+}
+.film-date-wrapper span.dateChosen{
+	border-bottom: 0.02rem solid #f84b49;
+}
+.choMovTime-wrapper .film-info .film-showtime{
+	padding: 0 0.156rem;
+}
+.choMovTime-wrapper .film-info .film-showtime .sun-show,.choMovTime-wrapper .film-info .film-showtime .night-show{
+	position: relative;
+}
+.sun-show{
+	display: none;
+}
+.active{
+	display: block;
+}
+.choMovTime-wrapper .film-info .film-showtime .sun-icon-wrapper{
+	width: 0.25rem;
+	height: 0.25rem;
+	text-align: center;
+	line-height: 0.25rem;
+	background: #f2f2f2;
+	position: absolute;
+	left: -0.13rem;
+}
+.choMovTime-wrapper .film-info .film-showtime .night-icon-wrapper{
+	width: 0.25rem;
+	height: 0.25rem;
+	text-align: center;
+	line-height: 0.25rem;
+	background: #f2f2f2;
+	position: relative;
+	left: -0.13rem;
+}
+.choMovTime-wrapper .film-info .film-showtime .film-part{
+	height: 0.6rem;
+	background: #fff;
+	margin-bottom: 0.05rem;
+	padding: 0 0.08rem;
+	display: block;
+}
+.choMovTime-wrapper .film-part .film-part-title{
+	height: 0.2rem;
+	padding: 0.05rem 0;
+	position: relative;
+}
+.choMovTime-wrapper .film-part .film-part-title p.type-placeholder{
+	width:0.65rem;
+	left: 0.65rem;
+	height: 0.2rem;
+	position: absolute;
+	bottom:0.08rem;
+}
+.choMovTime-wrapper .film-part .film-part-title em{
+	line-height: 100%;
+}
+.choMovTime-wrapper .film-part .film-start-time{
+	width: 0.45rem;
+	font-size: 0.16rem;
+	font-weight: bold;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.05rem;
+	color: #333;
+}
+.choMovTime-wrapper .film-part .film-language{
+	width: 0.12rem;
+	font-size: 0.08rem;
+	color: #fff;
+	padding: 0.01rem 0;
+	text-align: center;
+	display: inline-block;
+	border-radius: 2px;
+	-webkit-border-radius:2px;
+	background: #f84b4a;
+	position: absolute;
+	bottom: 0.08rem;
+	left: 0.45rem;
+}
+.choMovTime-wrapper .film-part .film-type{
+	font-size: 0.08rem;
+	padding: 0.01rem 0.02rem;
+	color: #fff;
+	background: #21b4e0;
+	border-radius: 2px;
+	-webkit-border-radius:2px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+}
+.choMovTime-wrapper .film-part .film-num{
+	font-size: 0.12rem;
+	color: #181818;
+	display: inline-block;
+	position: absolute;
+	bottom: 0.08rem;
+	left: 1.35rem;
+}
+.choMovTime-wrapper .film-part .film-ticket{
+	font-size: 0.16rem;
+	color: #f84b4a;
+	float: right;
+	display: inline-block;
+	position: absolute;
+	bottom:0.08rem;
+	right: 0.05rem;
+}
+.choMovTime-wrapper .film-part .film-part-cont{
+	height: 0.2rem;
+	padding: 0.05rem 0;
+}
+.choMovTime-wrapper .film-part .film-part-cont p{
+	float: left;
+}
+.choMovTime-wrapper .film-part .film-part-cont p:last-child{
+	float: right;
+	margin-right: 0.05rem;
+}
+.choMovTime-wrapper .film-part .film-part-cont .film-end-time{
+	font-size: 0.12rem;
+	color: #181818;
+	margin-right: 0.15rem;
+}
+.choMovTime-wrapper .film-part .film-part-cont .ticket-left{
+	font-size: 0.12rem;
+	color: #959595;
+}
+.choMovTime-wrapper .film-part .film-part-cont .film-price{
+	font-size: 0.12rem;
+	color: #181818;
+	display: block;
+	float: right;
+	margin-right: 0.05rem;
+}
+.choMovTime-wrapper .film-part .film-part-cont .film-price i{
+	text-decoration: line-through;
+}
+
+/*
+ * 选择影院
+ */
+.cinema_info{
+	padding: 0.156rem;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.cinema_info p:nth-child(1){
+	font-size: 0.16rem;
+}
+.cinema_info p:nth-child(2){
+	font-size: 0.12rem;
+	margin: 0.078rem 0.234rem 0 0;
+}
+.cinema_info img{
+	width: 0.125rem;
+	height: 0.187rem;
+	position: absolute;
+	top: 50%;
+	right: 0.156rem;
+	transform: translate(-50%, -50%)
+}

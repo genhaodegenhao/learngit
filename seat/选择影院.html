@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>选择影院</title>
+		<link rel="stylesheet" href="css/phone.base.css">
+		<link rel="stylesheet" href="css/choMovTime.css">
+		<script>
+	    	var lib = {flexible:{rem:200,page:640}}; 
+		</script>
+		<script src="js/flexible.js"></script>
+	</head>
+	<body>
+			<div>
+				<ul class="film-local"></ul>
+			</div>
+			
+		<script src='js/zepto.min.js'></script>
+		<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script>
+			(function showCinemaList(){
+				$.ajax({
+					type:"get",
+					url:"address.json",
+					async:true,
+					success: function(result){
+						for(i=0;i<result.data.length;i++){
+							var info = result.data[i].cinema;
+							var cinemaInfo = '<li class="cinema_info"><p>'+info.name+'</p><p>'+info.address+'</p><img src="images/cinema_link.png" alt="" /></li>';
+							$(".film-local").append(cinemaInfo);
+						}
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+.cimane_list_wraper{
+/* 	display:none; */
+/* 	position:absolute; */
+/* 	z-index:20; */
+/* 	top:0px; */
+/* 	left:0px; */
+/* 	width:100%; */
+/* 	min-height:100%; */
+/* 	background:#fff; */
+}
+.cinema_list_box{
+	
+}
+.cinema_item{
+	position: relative;
+	padding:18px 12px;
+	border-bottom: 1px solid #c8cbd4;
+	cursor: pointer;
+}
+.cinema_item:hover{
+	background:#e5e5e5;
+}
+
+.cinema_item p{
+	margin-right: 20px;
+}
+.cinema_item .cinema_name{
+	font-weight: blod;
+}
+.cinema_item .cinema_address{
+	color:#3f454c;
+	margin-top:5px;
+}
+.city_list_wraper{
+	height:100%;
+}
+.city_list_wraper .city_letter_list{
+	position:relative;
+}
+.city_list_wraper .city_list .city_bar{
+	background:#c7cad0;
+	padding:8px 0px;
+	width:100%;
+} 
+.city_list_wraper .city_list .bar_title{
+	margin-left:15px;
+}
+.city_list_wraper .city_list .letter{
+	font-weight:blod;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.city_list_wraper .city_list .city_item{
+	padding:10px 30px;
+	border-bottom: 1px solid #c7cad0;
+}
+.city_list_wraper .ref_city_btn{
+	border:none;
+	border-radius:3px;
+	background:#c7cad0;
+	padding:2px 10px;
+	margin-right:20px;
+	float:right;
+}
+#citySliderBar{
+	position:absolute;
+	top:50px;
+	right:4px;
+	z-index:40;
+	width:40px;
+}
+#citySliderBar.highlight{
+	background-color:rgba(0,0,0,0.2);
+	border-radius:20px;
+}
+#citySliderBar li{
+	text-transform: uppercase;
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+	font-family: Arial, "Times New Roman", Times, serif;
+	color:#3D3D3D;
+	display:inline-block;
+}
+#cityBox{
+	overflow:auto;
+}
+.top_stop_ele{
+	width:100%;
+}
+.stop_bar{
+	position:absolute;
+	left:0px;
+	top:40px;
+	background:#c7cad0;
+	padding:8px 0px;
+	width:100%;
+	display:none;
+}
+.stop_bar span{
+	margin-left:15px;
+	font-weight:blod;
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#cityLetterAlt{
+	display:none;
+	position:fixed;
+	font-size:32px;
+	font-weight:bold;
+	line-height:72px;
+	height:72px;
+	width:72px;
+	text-align:center;
+	top:50%;
+	left:50%;
+	margin:-36px 0 0 -36px;	
+	color:#fff;
+	background:#000;
+	opacity:0.5;
+}	
+.oper_arrow{
+	position:absolute;
+	right:12px;
+	height:16px;
+	width:10px; 
+	top:50%;
+	margin-top:-8px;
+}

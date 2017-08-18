@@ -1,0 +1,1439 @@
+{
+	"msg": "",
+	"status": 0,
+	"data": [
+		{
+			"city": {
+				"cid": "8022251040",
+				"name": "北京",
+				"firstletter": "B",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8440481234",
+				"name": "荆门",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6922714796",
+				"name": "天津",
+				"firstletter": "T",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6379134445",
+				"name": "南通",
+				"firstletter": "N",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3562343701",
+				"name": "青岛",
+				"firstletter": "Q",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3477160395",
+				"name": "济南",
+				"firstletter": "J",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9530220907",
+				"name": "深圳",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3380842240",
+				"name": "潍坊",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7207401376",
+				"name": "莆田",
+				"firstletter": "P",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8416577860",
+				"name": "呼和浩特",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8567529259",
+				"name": "寿光",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7291338508",
+				"name": "包头",
+				"firstletter": "B",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7212936785",
+				"name": "大同",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4122978307",
+				"name": "温州",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3774659600",
+				"name": "上海",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5176706094",
+				"name": "晋城",
+				"firstletter": "J",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1226065737",
+				"name": "南京",
+				"firstletter": "N",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4560104724",
+				"name": "无锡",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2094237287",
+				"name": "苏州",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7799879883",
+				"name": "宁波",
+				"firstletter": "N",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2053708964",
+				"name": "临汾",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9104999479",
+				"name": "绍兴",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5732730853",
+				"name": "合肥",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3548762527",
+				"name": "蚌埠",
+				"firstletter": "B",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3194415290",
+				"name": "三亚",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4644577979",
+				"name": "广州",
+				"firstletter": "G",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5396544539",
+				"name": "东莞",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9564462207",
+				"name": "惠州",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1192925155",
+				"name": "晋江",
+				"firstletter": "J",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2225886889",
+				"name": "福州",
+				"firstletter": "F",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6038070126",
+				"name": "厦门",
+				"firstletter": "X",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7989932633",
+				"name": "石家庄",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7665083385",
+				"name": "海口",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9921719695",
+				"name": "武汉",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4087573112",
+				"name": "襄阳",
+				"firstletter": "X",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2085144079",
+				"name": "宜昌",
+				"firstletter": "Y",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7250245815",
+				"name": "南昌",
+				"firstletter": "N",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4045344865",
+				"name": "长沙",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8524908588",
+				"name": "株洲",
+				"firstletter": "Z",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2300725758",
+				"name": "洛阳",
+				"firstletter": "L",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7155711997",
+				"name": "哈尔滨",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6384217158",
+				"name": "大连",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2829506931",
+				"name": "沈阳",
+				"firstletter": "S",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1175345580",
+				"name": "长春",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6711250853",
+				"name": "银川",
+				"firstletter": "Y",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7385999329",
+				"name": "西安",
+				"firstletter": "X",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4540907551",
+				"name": "东营",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2311044252",
+				"name": "汉中",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5879519637",
+				"name": "兰州",
+				"firstletter": "L",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9907575958",
+				"name": "岳阳",
+				"firstletter": "Y",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4905168908",
+				"name": "成都",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3046736161",
+				"name": "梅河口",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2232952012",
+				"name": "南宁",
+				"firstletter": "N",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3547568701",
+				"name": "重庆",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3774659601",
+				"name": "淮安",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6543242467",
+				"name": "镇江",
+				"firstletter": "Z",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3130973615",
+				"name": "郑州",
+				"firstletter": "Z",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1043667933",
+				"name": "泰州",
+				"firstletter": "T",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1317370735",
+				"name": "廊坊",
+				"firstletter": "L",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5300502085",
+				"name": "常州",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3337673487",
+				"name": "芜湖",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3399933792",
+				"name": "唐山",
+				"firstletter": "T",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8291141864",
+				"name": "大庆",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1189839926",
+				"name": "吉林",
+				"firstletter": "J",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2143414856",
+				"name": "德阳",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4297743915",
+				"name": "白山",
+				"firstletter": "B",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4284583834",
+				"name": "徐州",
+				"firstletter": "X",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5042786171",
+				"name": "淄博",
+				"firstletter": "Z",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2176921763",
+				"name": "牡丹江",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3066765357",
+				"name": "泉州",
+				"firstletter": "Q",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9305903641",
+				"name": "漳州",
+				"firstletter": "Z",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "7381974075",
+				"name": "威海",
+				"firstletter": "W",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2814730802",
+				"name": "江阴",
+				"firstletter": "J",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3405175598",
+				"name": "乌海",
+				"firstletter": "W",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1035745027",
+				"name": "淮北",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "1518708233",
+				"name": "丹东",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2155379675",
+				"name": "保定",
+				"firstletter": "B",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3919967479",
+				"name": "金华",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1378659622",
+				"name": "宜兴",
+				"firstletter": "Y",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "4879416758",
+				"name": "宁德",
+				"firstletter": "N",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9746823942",
+				"name": "赤峰",
+				"firstletter": "C",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4002608694",
+				"name": "绵阳",
+				"firstletter": "M",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "2577626795",
+				"name": "淮南",
+				"firstletter": "H",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "5725018206",
+				"name": "贵阳",
+				"firstletter": "G",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3822930875",
+				"name": "德州",
+				"firstletter": "D",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "9286496541",
+				"name": "太仓",
+				"firstletter": "T",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "6689362247",
+				"name": "济宁",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8725673013",
+				"name": "太原",
+				"firstletter": "T",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5427980632",
+				"name": "延吉",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5869704660",
+				"name": "遂宁",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1850982208",
+				"name": "渭南",
+				"firstletter": "W",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2087706035",
+				"name": "郴州",
+				"firstletter": "C",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "8406207734",
+				"name": "九江",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7109807595",
+				"name": "石狮",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4952883399",
+				"name": "铜陵",
+				"firstletter": "T",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8802873247",
+				"name": "满洲里",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7813090797",
+				"name": "台州",
+				"firstletter": "T",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1707620382",
+				"name": "梅州",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7409861159",
+				"name": "衡阳",
+				"firstletter": "H",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6264651709",
+				"name": "盘锦",
+				"firstletter": "P",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5621815297",
+				"name": "昆山",
+				"firstletter": "K",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9427570865",
+				"name": "湘潭",
+				"firstletter": "X",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6033750107",
+				"name": "简阳",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2927053620",
+				"name": "烟台",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1179649858",
+				"name": "内江",
+				"firstletter": "N",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4863769488",
+				"name": "齐齐哈尔",
+				"firstletter": "Q",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4085225401",
+				"name": "乐山",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6574621300",
+				"name": "抚顺",
+				"firstletter": "F",
+				"isgroupon": 1
+			},
+			"isgroupon": 1
+		}, {
+			"city": {
+				"cid": "3864493605",
+				"name": "佳木斯 ",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3851678454",
+				"name": "福清",
+				"firstletter": "F",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1114605208",
+				"name": "泰安",
+				"firstletter": "T",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7384626234",
+				"name": "江门",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5209981770",
+				"name": "阜阳",
+				"firstletter": "F",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9694328555",
+				"name": "六安",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2322993523",
+				"name": "桂林",
+				"firstletter": "G",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3835054600",
+				"name": "安阳",
+				"firstletter": "A",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1105545219",
+				"name": "宝鸡",
+				"firstletter": "B",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3673977316",
+				"name": "黄石",
+				"firstletter": "H",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2338100806",
+				"name": "柳州",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2430883914",
+				"name": "通辽",
+				"firstletter": "T",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6008213246",
+				"name": "玉溪",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7336294259",
+				"name": "宜春",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9960262003",
+				"name": "麻城",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6043684680",
+				"name": "新余",
+				"firstletter": "X",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2166163609",
+				"name": "杭州",
+				"firstletter": "H",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7441192632",
+				"name": "咸阳",
+				"firstletter": "X",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6522371139",
+				"name": "昆明",
+				"firstletter": "K",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6559014394",
+				"name": "营口",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3190860071",
+				"name": "广元",
+				"firstletter": "G",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7362449013",
+				"name": "义乌",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5427439522",
+				"name": "朝阳",
+				"firstletter": "C",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4743854952",
+				"name": "宿州",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7985210435",
+				"name": "荆州",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "1541666967",
+				"name": "鸡西",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6801689500",
+				"name": "西宁",
+				"firstletter": "X",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3324269622",
+				"name": "乌鲁木齐",
+				"firstletter": "W",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4554303750",
+				"name": "连云港",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6252611078",
+				"name": "萍乡",
+				"firstletter": "P",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9456340390",
+				"name": "三门峡",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7084072807",
+				"name": "上饶",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5223209114",
+				"name": "龙岩",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9852995959",
+				"name": "临沂",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8410272278",
+				"name": "亳州",
+				"firstletter": "B",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8091012140",
+				"name": "常德",
+				"firstletter": "C",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6721169204",
+				"name": "滨州",
+				"firstletter": "B",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2201225170",
+				"name": "清远",
+				"firstletter": "Q",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2316863808",
+				"name": "佛山",
+				"firstletter": "F",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5679187096",
+				"name": "固安",
+				"firstletter": "G",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2338186499",
+				"name": "钟祥",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2339672767",
+				"name": "中山",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6211736310",
+				"name": "眉山",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6781294081",
+				"name": "汕头",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "4119289093",
+				"name": "娄底",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6496829122",
+				"name": "抚州",
+				"firstletter": "F",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8160502758",
+				"name": "丹寨",
+				"firstletter": "D",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2067975111",
+				"name": "常熟",
+				"firstletter": "C",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3254119935",
+				"name": "雅安",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8401129855",
+				"name": "诸暨 ",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6808414206",
+				"name": "资阳",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6297450631",
+				"name": "湖州 ",
+				"firstletter": "H",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6308232590",
+				"name": "西双版纳",
+				"firstletter": "X",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7498759233",
+				"name": "湛江",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "2963393735",
+				"name": "四平",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7043931691",
+				"name": "韶关",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6547021916",
+				"name": "北海",
+				"firstletter": "B",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9679272449",
+				"name": "盐城",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6629791804",
+				"name": "焦作",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7039769029",
+				"name": "敦化",
+				"firstletter": "D",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6993782532",
+				"name": "南阳",
+				"firstletter": "N",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7380164148",
+				"name": "辽阳",
+				"firstletter": "L",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8330772594",
+				"name": "马鞍山",
+				"firstletter": "M",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "9714007591",
+				"name": "嘉兴",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8431020881",
+				"name": "日照",
+				"firstletter": "R",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8574418537",
+				"name": "十堰",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "3499125005",
+				"name": "三明",
+				"firstletter": "S",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "8685807909",
+				"name": "惠安",
+				"firstletter": "H",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "5672116174",
+				"name": "益阳",
+				"firstletter": "Y",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "7868060340",
+				"name": "枣庄",
+				"firstletter": "Z",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}, {
+			"city": {
+				"cid": "6381433590",
+				"name": "晋中",
+				"firstletter": "J",
+				"isgroupon": 0
+			},
+			"isgroupon": 0
+		}
+	]
+}

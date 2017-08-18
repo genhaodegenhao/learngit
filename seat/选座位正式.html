@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<title>座位图</title>
+		<script>
+        	var lib = {flexible: {rem: 200, page: 640}};
+   		</script>
+    	<script src="js/flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/rem.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/iscroll-zoom-seat.js"></script>
+		<script type="text/javascript" src="js/fn.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.base.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.mask.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.confirm.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.floatingHint.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.seat.js"></script>
+		
+
+		<style type="text/css">
+			.activitySeatBox{
+				display:block;
+				height:12px;
+				position:relative;
+			}
+			.activitySeatTag{
+				display:block;
+				position: absolute;
+				left:0;bottom:0;width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header" align="center">购票</div>
+		<div>
+			<div class="tbar center" id="filmshowbar">
+				<table class="grid">
+					<tr>
+						<td>
+							<div class="center"><span id="filmname">&nbsp;</span><span id="dimen"></span></div>
+							<div class="center"><span id="filmtime"></span><span>&nbsp;/&nbsp;</span><span id="hallname">&nbsp;</span></div>
+						</td>
+					</tr>
+				</table> 
+			</div>
+			<div class="center legend" id="seatlegendbar">
+				<span class="icon24 i111"></span><span class="">可选</span>
+				<span class="icon24 i311"></span><span class="">已选</span>
+				<span class="icon24 i011"></span><span class="">已售</span>
+			</div>
+			<div class="pprl10 pt6" id="seatyinmubar"><div class="center yinmu"><span class="caption prl10">银幕</span></div></div>
+			<div id="seat"></div>
+			<div class="selectedSeats pprl3 mt10" id="selectedSeats">
+				<ul id="selectedLs">
+					<li><div class="pr8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="prl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pr8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="prl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="pprl3 ptb10 mt8" id="tobuybar">
+				<span class="btn t1 buy block corner-5 fzxl" id="tobuy">下一步</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/chooseSeat.js"></script>
+	</body>
+</html>

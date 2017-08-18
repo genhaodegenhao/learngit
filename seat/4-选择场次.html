@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/phone.base.css">
+	<link rel="stylesheet" href="css/choMovTime.css">
+	<script>
+    	var lib = {flexible:{rem:200,page:640}}; 
+	</script>
+	<script src="js/flexible.js"></script>
+	<script type="text/javascript">
+	    	//查询影片排期列表数据
+	    	var path="";
+			//查询影院列表配置数据
+			var showCinemaOpts = {
+					'hideEle':['showWraper'],
+					'callback':'getFilmShowByCinema',
+					'cityId':'8022251040',
+					'cityName':'北京',
+					'locCityId':'8022251040',
+					'locCityName':'北京'
+			};
+		</script>
+</head>
+<body>
+	<div id="showWraper" class="choMovTime-wrapper">
+		<ul class="film-local">
+			<li class="cinema_info" style="border:none" onclick="showCinemaListBySl()">
+				<p class="cinema_name">上海江桥万达广场店</p>
+				<p class="cinema_address">嘉定区金沙江西路1075弄49号江桥万达广场3</p>
+				<img src="images/cinema_link.png" alt="">
+			</li>
+		</ul>
+		<div class="film-info">
+			<div class="film-date">
+				<div class="film-date-wrapper clearfix"></div>				
+			</div>
+			<div class="film-showtime">
+				<div class="sun-show active">				
+					<a href="" class="film-part">
+						<div class="film-part-title clearfix">
+							<em class="film-start-time time">09:50</em>
+							<em class="film-language">中</em>
+							<p class="type-placeholder"><em class='film-type film-show-type'>IMAX-3D/3D</em></p>	
+							<em class="film-num">7号厅</em>	
+							<em class="film-ticket">¥45</em>						
+						</div>
+						<div class="film-part-cont clearfix">
+							<em class="film-end-time">21:55结束</em>
+							<em class="ticket-left">余175/192</em>
+							<em class="film-price">影城价<i>100</i></em>
+						</div>
+					</a>
+					<a href="" class="film-part">
+						<div class="film-part-title clearfix">
+							<em class="film-start-time time">11:50</em>
+							<em class="film-language">中</em>
+							<p class="type-placeholder"><em class='film-type film-show-type'>3D</em></p>	
+							<em class="film-num">2号厅</em>	
+							<em class="film-ticket">¥30</em>					
+						</div>
+						<div class="film-part-cont clearfix">
+							<em class="film-end-time">21:55结束</em>
+							<em class="ticket-left">余175/192</em>
+							<em class="film-price">影城价<i>100</i></em>
+						</div>
+					</a>
+				</div>
+				<div class="sun-show">
+					<a href="" class="film-part">
+						<div class="film-part-title clearfix">
+							<em class="film-start-time time">09:50</em>
+							<em class="film-language">中</em>
+							<p class="type-placeholder"><em class='film-type film-show-type'>IMAX-3D/3D</em></p>
+							<em class="film-num">7号厅</em>
+							<em class="film-ticket">¥55</em>						
+						</div>
+						<div class="film-part-cont clearfix">
+							<em class="film-end-time">21:55结束</em>
+							<em class="ticket-left">余175/192</em>
+							<em class="film-price">影城价<i>100</i></em>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div class="cinemaShow">
+		<ul class="cinemainfo_wrapper"></ul>
+	</div>-->
+	<script src='js/zepto.min.js'></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/common/template-native.js"></script>
+ 	<script src="js/common/history.js"></script>
+ 	<script src='js/choMovTime.js'></script>
+ 	<script src="js/影院列表信息与切换.js"></script>
+</body>
+</html>

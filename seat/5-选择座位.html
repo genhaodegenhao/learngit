@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/phone.base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+    <script>
+        var lib = {flexible: {rem: 200, page: 640}};
+    </script>
+
+    <script src="js/flexible.js"></script>
+
+    <script src="http://cdn.bootcss.com/hammer.js/2.0.4/hammer.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <title>无标题文档</title>
+</head>
+
+<body>
+
+<div class="wd-film wrapper ">
+    <div class="tbar">
+        <div class="current-film">
+            <span class="film-time">7月8日&nbsp;&nbsp;&nbsp;&nbsp;19:50</span>
+            <span>
+                <em class="icon-led film-language">中</em><em class='icon-led film-type'>IMAX-3D/3D</em>
+            </span>
+        </div>
+        <div class="next-film">
+            <span class="film-time">19&nbsp;:&nbsp;50</span>
+            <span>
+                <p class="type-placeholder">下一场</p>
+            </span>
+        </div>
+        <p class="icon-right"></p>
+    </div>
+    <div class="seat select-seat">
+        <div class="seat-title"><p>7号厅银幕</p></div>
+        <div class="seat-legend">
+            <span class=" optional-seat"></span>
+            <span class="">可选</span>
+            <span class=" selected-seat"></span>
+            <span class="">已选</span>
+            <span class="sellout-seat"></span>
+            <span class="">已售</span>
+        </div>
+        <div class="seat-map" id="seat-map">
+            <div class="map-inner" id="map-inner">
+                <ul class="seats"></ul>
+
+            </div>
+            <div class="map-row">
+                <ul class="rows">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="fixed-area footer">
+    <div class="reservations">
+        <p><span>3排07座</span><a class="" href="javascript:void(0)"></a></p>
+        <p><span>3排07座</span><a class="" href="javascript:void(0)"></a></p>
+        <p><span>3排07座</span><a class="" href="javascript:void(0)"></a></p>
+        <p class="reservations-empty">待选座位</p>
+        <p class="reservations-empty">待选座位</p>
+        <p class="reservations-empty">待选座位</p>
+    </div>
+    <div class="submit">
+        <a href="" class="btn">下一步</a>
+    </div>
+
+</div>
+<script>
+    var seatList = '',
+        seatOne = '<span class="seat-avail"><em class="seat-room"></em></span>',
+        seat_width = 42,    //包括空位
+        seat_height = 14,   //包括空行
+        seat_default = [[7, 36], [5, 38], [4, 39], [0, 0], [5, 38], [5, 38], [5, 38], [5, 38], [5, 38], [5, 38], [5, 38], [5, 38], [1, 42], [1, 42]];
+
+    //座位拼接
+    for (var j = 0; j < seat_height; j++) {
+        seatList += '<li>';
+        for (var i = 0; i < seat_width; i++) {
+            seatList += seatOne;
+        }
+        seatList += '</li>';
+    }
+
+    $("#seat-map .map-inner .seats").append(seatList);
+
+    var row = 1,
+        map_row = $('.map-row .rows');
+    //座位状态修改
+    for (var j = 1; j < seat_default.length; j++) {
+        var _li = $('#seat-map li:nth-child(' + j + ')'),
+            _span = _li.find('span'),
+            _start = seat_default[j][0], _end = seat_default[j][1];
+
+        if (_end != 0) {
+            map_row.append('<li>' + row + '</li>');
+            _li[0].setAttribute('data-row', row++);
+        } else {
+            map_row.append('<li></li>');
+        }
+        for (var i = _start; i < _end; i++) {
+            $(_span[i - 1]).find('em').addClass('optional-seat');
+            _span[i - 1].setAttribute('data-col', i);
+        }
+    }
+
+    //座位选择
+    $('.seat-avail').tap(function () {
+        if ($(this).find(".optional-seat").length > 0) {
+            $(this).find(".optional-seat").addClass('selected-seat');
+//            alert( $(this).find(".optional-seat")[0].className);
+//            $("#tip").html("tip");
+        }
+
+    })
+
+
+    var reqAnimationFrame = (function () {
+        return window[Hammer.prefixed(window, 'requestAnimationFrame')] || function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
+
+    var _screen = document.querySelector(".seat-map");
+    var el = document.querySelector(".map-inner");
+    var rows = document.querySelector(".map-row");
+    var el_width = el.offsetWidth, el_height = el.offsetHeight, _screen_width = _screen.offsetWidth, _screen_height = _screen.offsetHeight;
+    //        var START_X = Math.round((screen.offsetWidth - el.offsetWidth) / 2);
+    //        var START_Y = Math.round((screen.offsetHeight - el.offsetHeight) / 2);
+    var START_X = 0;
+    var START_Y = 0;
+    var ticking = false;
+    var transform;
+    var timer;
+
+    var mc = new Hammer.Manager(el);
+
+    mc.add(new Hammer.Pan({threshold: 0, pointers: 0}));
+
+    mc.add(new Hammer.Swipe()).recognizeWith(mc.get('pan'));
+    mc.add(new Hammer.Rotate({threshold: 0})).recognizeWith(mc.get('pan'));
+    mc.add(new Hammer.Pinch({threshold: 0})).recognizeWith([mc.get('pan'), mc.get('rotate')]);
+
+    //        mc.add(new Hammer.Tap({ event: 'doubletap', taps: 2 }));
+    //        mc.add(new Hammer.Tap());
+
+    mc.on("panstart panmove", onPan);
+    mc.on("panend", onPanEnd);
+    //        mc.on("rotatestart rotatemove", onRotate);
+    mc.on("pinchstart pinchmove", onPinch);
+    //        mc.on("swipe", onSwipe);
+    //        mc.on("tap", onTap);
+    //        mc.on("doubletap", onDoubleTap);
+
+    mc.on("hammer.input", function (ev) {
+        if (ev.isFinal) {
+//                resetElement();
+        }
+    });
+
+    transform = {
+        translate: {x: START_X, y: START_Y},
+        scale: (_screen.offsetWidth / el.offsetWidth),
+        angle: 0,
+        rx: 0,
+        ry: 0,
+        rz: 0
+    };
+    el.style.webkitTransformOrigin = '0% 0% ';
+    el.style.mozTransformOrigin = '0% 0%';
+    el.style.transformOrigin = '0% 0%';
+    rows.style.webkitTransformOrigin = '0% 0% ';
+    rows.style.mozTransformOrigin = '0% 0%';
+    rows.style.transformOrigin = '0% 0%';
+    function resetElement() {
+//            el.className = 'map-inner animate';
+        requestElementUpdate();
+    }
+
+    function updateElementTransform() {
+        if (transform.scale < (_screen.offsetWidth / el.offsetWidth)) {
+            transform.scale = (_screen.offsetWidth / el.offsetWidth);
+        }
+        if (transform.scale > 1.5) {
+            transform.scale = 1.5
+        }
+//            $('#tip').html(transform.translate.y +"@@"+el_height*transform.scale+"@@"+_screen_height+"##"+transform.scale);
+
+        (transform.translate.x < (-(el_width * transform.scale - _screen_width))) ? (transform.translate.x = START_X = (-(el_width * transform.scale - _screen_width))) : 2;
+        (transform.translate.y < (-(el_height * transform.scale - _screen_height))) ? (transform.translate.y = START_Y = (-(el_height * transform.scale - _screen_height))) : 2;
+        (transform.translate.x > 0) ? transform.translate.x = START_X = 0 : 2;
+        (transform.translate.y > 0) ? transform.translate.y = START_Y = 0 : 2;
+
+        var value = [
+                'translate3d(' + transform.translate.x + 'px, ' + transform.translate.y + 'px, 0)',
+                'scale(' + transform.scale + ', ' + transform.scale + ')',
+                'rotate3d(' + transform.rx + ',' + transform.ry + ',' + transform.rz + ',' + transform.angle + 'deg)'
+            ],
+            rows_value = [
+                'translate3d(0 , ' + transform.translate.y + 'px, 0)',
+                'scale(' + transform.scale + ', ' + transform.scale + ')',
+                'rotate3d(' + transform.rx + ',' + transform.ry + ',' + transform.rz + ',' + transform.angle + 'deg)'
+            ];
+
+        value = value.join(" ");
+        rows_value = rows_value.join(" ");
+//            console.log(value);
+        el.style.webkitTransform = value;
+        el.style.mozTransform = value;
+        el.style.transform = value;
+
+        rows.style.webkitTransform = rows_value;
+        rows.style.mozTransform = rows_value;
+        rows.style.transform = rows_value;
+
+        ticking = false;
+    }
+
+    function requestElementUpdate() {
+        if (!ticking) {
+            reqAnimationFrame(updateElementTransform);
+            ticking = true;
+        }
+    }
+
+    function onPan(ev) {
+//            el.className = '';
+        transform.translate = {
+            x: START_X + ev.deltaX,
+            y: START_Y + ev.deltaY
+        };
+//            console.log('--'+ev.deltaX);
+        requestElementUpdate();
+    }
+    function onPanEnd(ev) {
+        START_X += ev.deltaX, START_Y += ev.deltaY;
+    }
+
+    var initScale = 1;
+    function onPinch(ev) {
+//            console.log('++'+ev.deltaX);
+        if (ev.type == 'pinchstart') {
+            initScale = transform.scale || 1;
+        }
+
+        el.className = '';
+        transform.scale = initScale * ev.scale;
+
+        requestElementUpdate();
+    }
+
+    var initAngle = 0;
+    function onRotate(ev) {
+        if (ev.type == 'rotatestart') {
+            initAngle = transform.angle || 0;
+        }
+
+        el.className = '';
+        transform.rz = 1;
+        transform.angle = initAngle + ev.rotation;
+
+        requestElementUpdate();
+    }
+
+    function onSwipe(ev) {
+        var angle = 50;
+        transform.ry = (ev.direction & Hammer.DIRECTION_HORIZONTAL) ? 1 : 0;
+        transform.rx = (ev.direction & Hammer.DIRECTION_VERTICAL) ? 1 : 0;
+        transform.angle = (ev.direction & (Hammer.DIRECTION_RIGHT | Hammer.DIRECTION_UP)) ? angle : -angle;
+
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            resetElement();
+        }, 300);
+
+        requestElementUpdate();
+    }
+
+    function onTap(ev) {
+        transform.rx = 1;
+        transform.angle = 25;
+
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            resetElement();
+        }, 200);
+
+        requestElementUpdate();
+    }
+
+    function onDoubleTap(ev) {
+        transform.rx = 1;
+        transform.angle = 80;
+
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            resetElement();
+        }, 500);
+
+        requestElementUpdate();
+    }
+
+    resetElement();
+</script>
+</body>
+</html>

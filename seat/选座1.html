@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<title>座位图</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/ui.css" />
+		<script type="text/javascript" src="jss/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="jss/iscroll-zoom-seat.js"></script>
+		<script type="text/javascript" src="jss/fn.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.floatingHint.js"></script>
+		<script type="text/javascript" src="jss/jquery.ui.base.js"></script>
+		<script type="text/javascript" src="jss/jquery.ui.seat.js"></script>
+		<style type="text/css">
+			.activitySeatBox{
+				display:block;
+				height:12px;
+				position:relative;
+			}
+			.activitySeatTag{
+				display:block;
+				position: absolute;
+				left:0;bottom:0;width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header pprl3 ptb8" align="center">
+			<a href="javascript:history.back(-1);" class="fl icon24 i400"></a>
+			<span class="title ml30">购票</span>
+		</div>
+		<div>
+			<div class="tbar center" id="filmshowbar">
+				<table class="grid">
+					<tr>
+						<td>
+							<div class="center"><span class="ml6 fzxxl" id="filmname">&nbsp;</span><span id="dimen"></span></div>
+							<div class="center"><span class="fzs" id="filmtime"></span><span class="fzs">&nbsp;/&nbsp;</span><span class="fzs" id="hallname">&nbsp;</span></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="center legend pt6" id="seatlegendbar">
+				<span class="icon24 i111"></span><span class="">可选</span>
+				<span class="icon24 i311 ml4"></span><span class="">已选</span>
+				<span class="icon24 i011 ml4"></span><span class="">已售</span>
+			</div>
+			<div class="pprl10 pt6" id="seatyinmubar">
+				<div style="background: #ccc;" class="center yinmu"><span style="background-color:#ccc;" class="caption prl10">银幕</span></div>
+			</div>
+			<div id="seat"></div>
+			<div class="selectedSeats pprl3 mt10" id="selectedSeats">
+				<ul id="selectedLs">
+					<li><div class="pr8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="prl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pr8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="prl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+					<li><div class="pl8 pt2"><div class="activitySeatBox"></div><span class="btn seat block"><span class="txt">待选座位</span><span class="close fr"><span class="icon16 i217"></span></span></span></div></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="pprl3 ptb10 mt8" id="tobuybar">
+				<span class="btn buy block corner-5 fzxl" id="tobuy">即刻购买</span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+			$("#seat").seat({url:"data.json"});
+			
+			function updateSelectedSeat(target,a){
+				var ls=$("#selectedLs");
+				$(".seat",ls).removeClass("selected").removeClass("unselected");
+				$(".seat .txt",ls).text("待选座位");
+				for(var i=0;i<a.length;i++){
+					var li=$("li:eq("+i+")",ls);
+					var seat=$(".seat",li);
+					var activitySeatBox=$(".activitySeatBox",li);
+					seat.addClass("selected");
+					$(".txt",seat).text(a[i].seat.rowname+"排"+a[i].seat.colname+"座");
+				}
+			}
+			
+			$(function(){
+				$.fn.seat.defaults.onSeatSelected=function(target,data){
+					var seats=$(target).seat("getSelected");
+					updateSelectedSeat(target,seats);
+				};
+				$.fn.seat.defaults.onSeatUnselected=function(target,data){
+					var seats=$(target).seat("getSelected");
+					updateSelectedSeat(target,seats);
+				};
+			})
+			
+		</script>
+	</body>
+</html>

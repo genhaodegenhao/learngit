@@ -1,0 +1,35 @@
+{
+	"cinema_id": "802",
+	"show_date": "2016-11-10",
+	"shows":[
+		{
+			"cinema_id": "802",
+			"code": "13483",
+			"films": [
+				{
+					"code": "90110119210",
+					"duration": 190,
+					"edition": "3D+Imax",
+					"film_id": "7490",
+					"lang": "国语",
+					"name": "魔兽",
+					"seq": 1
+				}
+			],
+			"hall_id": "6",
+			"hall_code": "6",
+			"hall_fee": 0,
+			"id": "C8022161108000200",
+			"prices": [
+				{
+					"list_price": 0,
+					"price_code": "CP0000001460",
+					"price_type": "ALL",
+					"settle_price": 5000
+				}
+			]
+		}
+	],
+	"msg": "",
+	"status": 0
+}
